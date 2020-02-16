@@ -40,6 +40,8 @@ class Admin(commands.Cog):
         else:
             await member.add_roles(role)
 
+        await ctx.channel.purge(limit=1)
+
     @commands.command()
     async def purge(self, ctx, amount=1):
         if ctx.author.id == 525005875098812416:

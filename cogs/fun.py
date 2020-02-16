@@ -22,10 +22,12 @@ class FunCommands(commands.Cog):
 
     @commands.command()
     async def anger(self, ctx):
+        await ctx.channel.purge(limit=1)
         await ctx.send("Well that's a f***ing pain in the arse")
 
     @commands.command()
     async def tryharder(self, ctx):
+        await ctx.channel.purge(limit=1)
         await ctx.send("https://www.youtube.com/watch?v=t-bgRQfeW64")
 
 
