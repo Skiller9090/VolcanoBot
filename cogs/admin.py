@@ -24,8 +24,10 @@ class Admin(commands.Cog):
         announcement = discord.Embed(
             title="Announcement!",
             description=message,
-            colour=discord.Colour.dark_gold()
+            colour=discord.Colour.dark_gold(),
         )
+
+        announcement.set_footer(text=ctx.message.author.name)
 
         await ctx.channel.purge(limit=1)
         await ctx.send("<@&678334943306317862>", embed=announcement)

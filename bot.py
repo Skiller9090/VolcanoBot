@@ -1,4 +1,3 @@
-import discord.utils
 from discord.ext import commands
 import logging
 
